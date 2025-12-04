@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - GZMart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">GZMart</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">All Products</a>
+                <a href="brands.html">Brands</a>
+            </div>
+            <div class="nav-icons">
+                <a href="profile.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="settings.html" class="active"><i class="fas fa-cog"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <i class="fas fa-times close-menu"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="products.html">All Products</a>
+        <a href="brands.html">Brands</a>
+        <a href="profile.html">Profile</a>
+        <a href="cart.html">Cart</a>
+        <a href="settings.html">Settings</a>
+    </div>
+
+    <!-- Settings Page -->
+    <div class="settings-page">
+        <h1 class="page-title">Settings</h1>
+
+        <div class="settings-container">
+            <!-- Account Settings -->
+            <div class="settings-section">
+                <h2><i class="fas fa-user-cog"></i> Account Settings</h2>
+                <div class="settings-content">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Email Address</h3>
+                            <p>john.doe@example.com</p>
+                        </div>
+                        <button class="btn-secondary">Change</button>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Password</h3>
+                            <p>••••••••</p>
+                        </div>
+                        <button class="btn-secondary">Change</button>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Phone Number</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <button class="btn-secondary">Change</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification Settings -->
+            <div class="settings-section">
+                <h2><i class="fas fa-bell"></i> Notifications</h2>
+                <div class="settings-content">
+                    <div class="setting-toggle">
+                        <div class="setting-info">
+                            <h3>Email Notifications</h3>
+                            <p>Receive order updates and promotions via email</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-toggle">
+                        <div class="setting-info">
+                            <h3>SMS Notifications</h3>
+                            <p>Get text messages for order status</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-toggle">
+                        <div class="setting-info">
+                            <h3>Marketing Communications</h3>
+                            <p>Receive promotional offers and newsletters</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Settings -->
+            <div class="settings-section">
+                <h2><i class="fas fa-shield-alt"></i> Privacy & Security</h2>
+                <div class="settings-content">
+                    <div class="setting-toggle">
+                        <div class="setting-info">
+                            <h3>Two-Factor Authentication</h3>
+                            <p>Add an extra layer of security to your account</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Login History</h3>
+                            <p>View your recent login activity</p>
+                        </div>
+                        <button class="btn-secondary">View</button>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Data Privacy</h3>
+                            <p>Manage your personal data and privacy settings</p>
+                        </div>
+                        <button class="btn-secondary">Manage</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Settings -->
+            <div class="settings-section">
+                <h2><i class="fas fa-credit-card"></i> Payment Methods</h2>
+                <div class="settings-content">
+                    <div class="payment-card">
+                        <div class="card-info">
+                            <i class="fas fa-credit-card"></i>
+                            <div>
+                                <h3>Visa ending in 1234</h3>
+                                <p>Expires 12/25</p>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-secondary">Edit</button>
+                            <button class="btn-danger">Remove</button>
+                        </div>
+                    </div>
+                    <button class="btn-primary add-payment">
+                        <i class="fas fa-plus"></i> Add Payment Method
+                    </button>
+                </div>
+            </div>
+
+            <!-- Shipping Address -->
+            <div class="settings-section">
+                <h2><i class="fas fa-map-marker-alt"></i> Shipping Addresses</h2>
+                <div class="settings-content">
+                    <div class="address-card">
+                        <div class="address-info">
+                            <h3>Home</h3>
+                            <p>123 Main Street<br>San Francisco, CA 94102<br>United States</p>
+                        </div>
+                        <div class="address-actions">
+                            <button class="btn-secondary">Edit</button>
+                            <button class="btn-danger">Remove</button>
+                        </div>
+                    </div>
+                    <button class="btn-primary add-address">
+                        <i class="fas fa-plus"></i> Add New Address
+                    </button>
+                </div>
+            </div>
+
+            <!-- Appearance Settings -->
+            <div class="settings-section">
+                <h2><i class="fas fa-palette"></i> Appearance</h2>
+                <div class="settings-content">
+                    <div class="setting-toggle">
+                        <div class="setting-info">
+                            <h3>Dark Mode</h3>
+                            <p>Switch to dark theme</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Language</h3>
+                            <p>English (US)</p>
+                        </div>
+                        <button class="btn-secondary">Change</button>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Currency</h3>
+                            <p>USD ($)</p>
+                        </div>
+                        <button class="btn-secondary">Change</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Account Actions -->
+            <div class="settings-section danger-zone">
+                <h2><i class="fas fa-exclamation-triangle"></i> Account Actions</h2>
+                <div class="settings-content">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Deactivate Account</h3>
+                            <p>Temporarily disable your account</p>
+                        </div>
+                        <button class="btn-secondary">Deactivate</button>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Delete Account</h3>
+                            <p>Permanently delete your account and all data</p>
+                        </div>
+                        <button class="btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>GZMart</h3>
+                <p>Your trusted electronics store since 2020. We provide premium quality products with excellent customer service.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> support@gzmart.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GZMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

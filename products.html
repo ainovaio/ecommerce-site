@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - GZMart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">GZMart</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">All Products</a>
+                <a href="brands.html">Brands</a>
+            </div>
+            <div class="nav-icons">
+                <a href="profile.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="settings.html"><i class="fas fa-cog"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <i class="fas fa-times close-menu"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="products.html">All Products</a>
+        <a href="brands.html">Brands</a>
+        <a href="profile.html">Profile</a>
+        <a href="cart.html">Cart</a>
+        <a href="settings.html">Settings</a>
+    </div>
+
+    <!-- Banner Carousel -->
+    <div class="banner-carousel">
+        <div class="banner-slide active">
+            <img src="images/banner1.webp" alt="Banner 1">
+            <div class="banner-content">
+                <h2>Special Offers</h2>
+                <p>Up to 50% off on selected items</p>
+            </div>
+        </div>
+        <div class="banner-slide">
+            <img src="images/banner2.webp" alt="Banner 2">
+            <div class="banner-content">
+                <h2>New Arrivals</h2>
+                <p>Check out our latest products</p>
+            </div>
+        </div>
+        <div class="banner-slide">
+            <img src="images/banner3.webp" alt="Banner 3">
+            <div class="banner-content">
+                <h2>Gaming Season</h2>
+                <p>Gear up with the best gaming accessories</p>
+            </div>
+        </div>
+        <button class="banner-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="banner-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="banner-dots"></div>
+    </div>
+
+    <!-- Products Page Content -->
+    <div class="products-page">
+        <!-- Desktop Sidebar -->
+        <aside class="sidebar desktop-sidebar">
+            <div class="filter-section">
+                <h3>Categories</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="Phones"> Phones</label>
+                    <label><input type="checkbox" value="Headphones"> Headphones</label>
+                    <label><input type="checkbox" value="Speakers"> Speakers</label>
+                    <label><input type="checkbox" value="Laptop Accessories"> Laptop Accessories</label>
+                    <label><input type="checkbox" value="Gaming Accessories"> Gaming Accessories</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Brands</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="Sony"> Sony</label>
+                    <label><input type="checkbox" value="Samsung"> Samsung</label>
+                    <label><input type="checkbox" value="Apple"> Apple</label>
+                    <label><input type="checkbox" value="Razer"> Razer</label>
+                    <label><input type="checkbox" value="Logitech"> Logitech</label>
+                    <label><input type="checkbox" value="Bose"> Bose</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <div class="filter-options">
+                    <label><input type="checkbox" value="0-50"> Under $50</label>
+                    <label><input type="checkbox" value="50-100"> $50 - $100</label>
+                    <label><input type="checkbox" value="100-200"> $100 - $200</label>
+                    <label><input type="checkbox" value="200-500"> $200 - $500</label>
+                    <label><input type="checkbox" value="500+"> $500+</label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Mobile Filters -->
+        <div class="mobile-filters">
+            <div class="filter-dropdown">
+                <div class="filter-header">
+                    <span>Categories</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="filter-content">
+                    <label><input type="checkbox" value="Phones"> Phones</label>
+                    <label><input type="checkbox" value="Headphones"> Headphones</label>
+                    <label><input type="checkbox" value="Speakers"> Speakers</label>
+                    <label><input type="checkbox" value="Laptop Accessories"> Laptop Accessories</label>
+                    <label><input type="checkbox" value="Gaming Accessories"> Gaming Accessories</label>
+                </div>
+            </div>
+
+            <div class="filter-dropdown">
+                <div class="filter-header">
+                    <span>Brands</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="filter-content">
+                    <label><input type="checkbox" value="Sony"> Sony</label>
+                    <label><input type="checkbox" value="Samsung"> Samsung</label>
+                    <label><input type="checkbox" value="Apple"> Apple</label>
+                    <label><input type="checkbox" value="Razer"> Razer</label>
+                    <label><input type="checkbox" value="Logitech"> Logitech</label>
+                    <label><input type="checkbox" value="Bose"> Bose</label>
+                </div>
+            </div>
+
+            <div class="filter-dropdown">
+                <div class="filter-header">
+                    <span>Price Range</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="filter-content">
+                    <label><input type="checkbox" value="0-50"> Under $50</label>
+                    <label><input type="checkbox" value="50-100"> $50 - $100</label>
+                    <label><input type="checkbox" value="100-200"> $100 - $200</label>
+                    <label><input type="checkbox" value="200-500"> $200 - $500</label>
+                    <label><input type="checkbox" value="500+"> $500+</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>GZMart</h3>
+                <p>Your trusted electronics store since 2020. We provide premium quality products with excellent customer service.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> support@gzmart.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GZMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add to Cart Notification -->
+    <div class="cart-notification">
+        <i class="fas fa-check-circle"></i>
+        <span>Added to cart!</span>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

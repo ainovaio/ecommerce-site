@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - GZMart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">GZMart</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">All Products</a>
+                <a href="brands.html">Brands</a>
+            </div>
+            <div class="nav-icons">
+                <a href="profile.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="settings.html"><i class="fas fa-cog"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <i class="fas fa-times close-menu"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="products.html">All Products</a>
+        <a href="brands.html">Brands</a>
+        <a href="profile.html">Profile</a>
+        <a href="cart.html">Cart</a>
+        <a href="settings.html">Settings</a>
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-page">
+        <button class="back-btn" onclick="window.history.back()">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+
+        <div class="product-container">
+            <!-- Product Images -->
+            <div class="product-images">
+                <div class="image-carousel">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="images/product1.webp" alt="Product">
+                    </div>
+                    <button class="image-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="image-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="thumbnail-images">
+                    <img src="images/product1.webp" alt="Image 1" class="active">
+                    <img src="images/product1-alt.webp" alt="Image 2">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 id="productName">Wireless Headphones Pro</h1>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(4.5 / 245 reviews)</span>
+                </div>
+                <div class="product-price">
+                    <span class="price" id="productPrice">$79.99</span>
+                    <span class="original-price">$99.99</span>
+                    <span class="discount">20% OFF</span>
+                </div>
+
+                <div class="product-description">
+                    <h3>Description</h3>
+                    <p id="productDescription">
+                        Premium wireless headphones with active noise cancellation. 
+                        Experience crystal-clear audio with deep bass and crisp highs. 
+                        Perfect for music lovers, travelers, and professionals.
+                    </p>
+                </div>
+
+                <div class="product-details">
+                    <div class="detail-item">
+                        <i class="fas fa-truck"></i>
+                        <div>
+                            <strong>Delivery</strong>
+                            <p id="productDelivery">2-3 business days</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-box"></i>
+                        <div>
+                            <strong>What's Included</strong>
+                            <p id="productIncludes">Headphones, USB-C charging cable, carrying case, user manual</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <strong>Warranty</strong>
+                            <p>1 year manufacturer warranty</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-features">
+                    <h3>Key Features</h3>
+                    <ul id="productFeatures">
+                        <li>Active Noise Cancellation (ANC)</li>
+                        <li>40-hour battery life</li>
+                        <li>Bluetooth 5.0 connectivity</li>
+                        <li>Foldable design with premium materials</li>
+                        <li>Built-in microphone for calls</li>
+                    </ul>
+                </div>
+
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                        <input type="number" value="1" min="1" max="10" id="productQuantity">
+                        <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" id="addToCartBtn">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                    <button class="btn-secondary buy-now-btn" id="buyNowBtn">
+                        <i class="fas fa-bolt"></i> Buy Now
+                    </button>
+                </div>
+
+                <div class="product-questions">
+                    <h3>Have Questions?</h3>
+                    <form class="question-form">
+                        <textarea placeholder="Ask a question about this product..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Submit Question</button>
+                    </form>
+                    <div class="existing-questions">
+                        <div class="question-item">
+                            <p class="question"><strong>Q:</strong> Does it support iOS devices?</p>
+                            <p class="answer"><strong>A:</strong> Yes, it's compatible with all Bluetooth-enabled devices including iOS, Android, and computers.</p>
+                        </div>
+                        <div class="question-item">
+                            <p class="question"><strong>Q:</strong> How long does it take to fully charge?</p>
+                            <p class="answer"><strong>A:</strong> Approximately 2-3 hours for a full charge using the included USB-C cable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>GZMart</h3>
+                <p>Your trusted electronics store since 2020. We provide premium quality products with excellent customer service.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> support@gzmart.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GZMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add to Cart Notification -->
+    <div class="cart-notification">
+        <i class="fas fa-check-circle"></i>
+        <span>Added to cart!</span>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

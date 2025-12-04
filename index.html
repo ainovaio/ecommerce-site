@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZMart - Your Electronics Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">GZMart</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">All Products</a>
+                <a href="brands.html">Brands</a>
+            </div>
+            <div class="nav-icons">
+                <a href="profile.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="settings.html"><i class="fas fa-cog"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <span>Menu</span>
+            <i class="fas fa-times close-menu"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="products.html">All Products</a>
+        <a href="brands.html">Brands</a>
+        <a href="profile.html">Profile</a>
+        <a href="cart.html">Cart</a>
+        <a href="settings.html">Settings</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to GZMart</h1>
+            <p>Your One-Stop Shop for Premium Electronics</p>
+            <a href="products.html" class="btn-primary">Shop All Products</a>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <h2 class="section-title">Our Brands</h2>
+        <div class="carousel-container">
+            <div class="carousel brands-carousel">
+                <div class="carousel-card">
+                    <img src="images/brand-sony.webp" alt="Sony">
+                </div>
+                <div class="carousel-card">
+                    <img src="images/brand-samsung.webp" alt="Samsung">
+                </div>
+                <div class="carousel-card">
+                    <img src="images/brand-apple.webp" alt="Apple">
+                </div>
+                <div class="carousel-card">
+                    <img src="images/brand-razer.webp" alt="Razer">
+                </div>
+                <div class="carousel-card">
+                    <img src="images/brand-logitech.webp" alt="Logitech">
+                </div>
+                <div class="carousel-card">
+                    <img src="images/brand-bose.webp" alt="Bose">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-section">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="carousel-container">
+            <div class="carousel products-carousel">
+                <!-- Products will be loaded by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="carousel-container">
+            <div class="carousel categories-carousel">
+                <div class="category-card">
+                    <img src="images/category-phones.webp" alt="Phones">
+                    <div class="category-overlay">
+                        <h3>Phones</h3>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/category-headphones.webp" alt="Headphones">
+                    <div class="category-overlay">
+                        <h3>Headphones</h3>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/category-speakers.webp" alt="Speakers">
+                    <div class="category-overlay">
+                        <h3>Speakers</h3>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/category-laptop-accessories.webp" alt="Laptop Accessories">
+                    <div class="category-overlay">
+                        <h3>Laptop Accessories</h3>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/category-gaming.webp" alt="Gaming Accessories">
+                    <div class="category-overlay">
+                        <h3>Gaming Accessories</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products and special offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>GZMart</h3>
+                <p>Your trusted electronics store since 2020. We provide premium quality products with excellent customer service.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">All Products</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> support@gzmart.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GZMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add to Cart Notification -->
+    <div class="cart-notification">
+        <i class="fas fa-check-circle"></i>
+        <span>Added to cart!</span>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
